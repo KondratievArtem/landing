@@ -4,6 +4,10 @@
 		position: relative;
 		max-height: 95vh;
 	}
+	&__container {
+		// display: flex;
+		// align-items: flex-end;
+	}
 	&__body {
 		display: flex;
 		flex: 1 1 auto;
@@ -12,7 +16,8 @@
 	&__content {
 		font-size: 2.6rem;
 		text-transform: uppercase;
-		margin-top: 20%;
+		margin-top: 25%;
+		margin-bottom: 2rem;
 		margin-left: 2.5%;
 		position: relative;
 		z-index: 5;
@@ -33,7 +38,7 @@
 		padding: 1rem 2rem;
 		border-radius: 2.5rem;
 		color: #fff;
-		margin-top: 2rem;
+		margin-top: 1rem;
 	}
 
 	&__content > *:not(:last-child) {
@@ -74,5 +79,27 @@
 	&__githab {
 		position: relative;
 		z-index: 5;
+	}
+}
+// media pull-------------------
+// 950 px---------------
+@media (max-width: 59.375em) {
+	.home {
+		&__container {
+			display: flex;
+			align-items: flex-end;
+		}
+	}
+}
+
+// 450px===============
+@media (max-width: 28.125em) {
+	.home {
+		&__content {
+			margin-bottom: 8rem;
+		}
+		&__img {
+			top: -5rem;
+		}
 	}
 }

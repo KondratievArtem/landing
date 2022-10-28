@@ -3,7 +3,7 @@ import myImg from '../assets/img/9.jpg';
 const Home = ({ statePage }) => {
 	return (
 		<div className={statePage === 'Головна' ? 'home__root _block activPage' : 'home__root _block'}>
-			<div className="container">
+			<div className="home__container container">
 				<div className="home__body">
 					<div className="home__content">
 						<p className="home__sub-title">привіт, мене звати</p>
