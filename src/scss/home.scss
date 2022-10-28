@@ -1,0 +1,78 @@
+.home {
+	&__root {
+		// background-color: rgb(72, 103, 106);
+		position: relative;
+		max-height: 95vh;
+	}
+	&__body {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+	}
+	&__content {
+		font-size: 2.6rem;
+		text-transform: uppercase;
+		margin-top: 20%;
+		margin-left: 2.5%;
+		position: relative;
+		z-index: 5;
+
+		h1 {
+			font-size: 4rem;
+			span {
+				color: yellow;
+			}
+		}
+		p {
+			color: rgb(122, 116, 116);
+		}
+	}
+	&__dowlode {
+		display: inline-block;
+		border: 1px solid #fff;
+		padding: 1rem 2rem;
+		border-radius: 2.5rem;
+		color: #fff;
+		margin-top: 2rem;
+	}
+
+	&__content > *:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+	&__img {
+		position: absolute;
+		top: -10rem;
+		right: 0;
+		width: 100%;
+		// height: 100%;
+		// transform: scale(1.3);
+		display: flex;
+		justify-content: flex-end;
+
+		img {
+			position: relative;
+			top: 0;
+			right: 0;
+			max-width: 100%;
+			// height: 100%;
+		}
+	}
+	&__social {
+	}
+}
+
+.social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 10rem;
+	margin-top: 5rem;
+	svg {
+		fill: aliceblue;
+		width: 3rem;
+	}
+	&__githab {
+		position: relative;
+		z-index: 5;
+	}
+}

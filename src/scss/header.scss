@@ -1,0 +1,168 @@
+.header {
+	position: relative;
+	z-index: 30;
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logotyp {
+		font-size: 2.4rem;
+		span {
+			color: yellow;
+			font-size: 3rem;
+			letter-spacing: 0.3rem;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+	}
+	&__myList {
+		font-size: 2rem;
+		display: flex;
+		justify-content: space-between;
+		width: 55rem;
+
+		li {
+			cursor: pointer;
+			margin-left: 0.5rem;
+		}
+
+		li:hover {
+			color: yellow;
+		}
+	}
+	&__activ::after {
+		content: ' ';
+		display: block;
+		width: 100%;
+		height: 2px;
+		margin-top: 0.5rem;
+		background-color: rgb(234, 246, 8);
+		border-radius: 10px;
+	}
+
+	&__burger-menu {
+		display: none;
+	}
+}
+
+// media request
+// 950 px---------------
+@media (max-width: 59.375em) {
+	.header {
+		&__myList {
+			display: none;
+		}
+	}
+	.burger-menu {
+		display: block;
+		position: relative;
+		z-index: 100;
+
+		&__open-close {
+			width: 3rem;
+			height: 2rem;
+			position: relative;
+			cursor: pointer;
+			span,
+			&::after,
+			&::before {
+				content: '';
+				position: absolute;
+				display: block;
+				left: 0;
+				width: 100%;
+				height: 0.2rem;
+				background-color: aliceblue;
+			}
+			&::before {
+				top: 0;
+			}
+			span {
+				transform: translateY(-50%);
+				top: 50%;
+			}
+			&::after {
+				bottom: 0;
+			}
+		}
+		&__open-close:hover {
+			span,
+			&::after,
+			&::before {
+				background-color: yellow;
+			}
+		}
+
+		&__burgerList {
+			display: none;
+		}
+	}
+
+	.burger-menu.activ .burger-menu {
+		&__open-close {
+			width: 3rem;
+			height: 3rem;
+			&::before {
+				top: 48%;
+
+				transform: rotate(45deg);
+			}
+			span {
+				display: none;
+			}
+			&::after {
+				bottom: 48%;
+				transform: rotate(-45deg);
+			}
+		}
+		&__burgerList {
+			display: block;
+			position: absolute;
+			top: 5rem;
+			right: -5rem;
+			font-size: 2.4rem;
+			border: 1px solid rgb(245, 237, 11);
+			border-radius: 100% 3% 10% 100% / 47% 0% 36% 100%;
+			padding: 9rem 5rem;
+			z-index: 1000;
+			background-color: rgba(24, 24, 23, 1);
+			li {
+				text-align: right;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
+
+// 450 px---------------
+@media (max-width: 28.125em) {
+	.burger-menu {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 100;
+		padding: 1rem;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.01);
+		&__open-close {
+			display: none;
+		}
+
+		&__burgerList {
+			display: flex;
+			justify-content: space-between;
+
+			li {
+				font-size: 2.4rem;
+				padding: 1rem;
+				border-radius: 50%;
+				overflow: hidden;
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+}
