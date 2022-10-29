@@ -11,12 +11,52 @@ const myList = [
 const Header = ({ valueState }) => {
 	const [activPage, setActivPage] = React.useState('Головна');
 	const [activManu, setActivMenu] = React.useState(false);
+	const [hours, setHours] = React.useState(0);
+	const [dey, setDey] = React.useState(0);
+	const [minutes, setMinutes] = React.useState(0);
+	// const [data, setData] = React.useState(new Date());
+
 	const setValueState = (obj) => {
 		setActivPage(obj.page);
 		valueState(obj.page);
 	};
+	const startTimeData = new Date(2022, 1, 24).getTime();
+	setTimeout(function request() {
+		const getCurrentData = new Date().getTime();
+		let differenceData = getCurrentData - startTimeData;
+		setMinutes(Math.floor((differenceData % (1000 * 60 * 60)) / (1000 * 60)));
+		setHours(Math.floor((differenceData % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+		setDey(Math.floor(differenceData / (1000 * 60 * 60 * 24)));
+		setTimeout(request, 1000);
+	}, 1000);
 	return (
 		<div className="container">
+			<div className="header__time-war time-war">
+				<div>Війна триває:</div>
+				<div className="time-war__displey displey">
+					<div className="time-war__dey-body">
+						<div className="time-war__dey">
+							<div className="time-war__dey-decor"></div>
+							<span>{dey}</span>
+						</div>
+						<span className="time-war__dey-text">днів</span>
+					</div>
+
+					<div className="time-war__clock">
+						<div className="time-war__hours">
+							<div>{hours}</div>
+							<span>:</span>
+							<div>{minutes}</div>
+						</div>
+						<div className="time-war__clock-text">
+							<span>годин</span>
+						</div>
+					</div>
+				</div>
+				<div className="time-war__text">
+					<p>росія напала на Україну!!! Але ми переможемо! Слава Україні!!!</p>
+				</div>
+			</div>
 			<div className="header__body">
 				<div className="header__logotyp">
 					Web Deweloper <span>Kondratiev</span>

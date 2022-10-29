@@ -12,10 +12,10 @@ const Home = ({ statePage }) => {
 						</h1>
 						{/* <p className="home__sup-title">я професійний web розробник</p> */}
 						<a className="home__dowlode" href="./cv" download="mycv.txt">
-							загрузити cv
+							завантажити cv
 						</a>
 						<div className="home__social social">
-							<a href="https://github.com/KondratievArtem" className="social__githab">
+							<a className="social__githab" href="https://github.com/KondratievArtem">
 								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 									<title />
 									<g data-name="github coding dev developer" id="github_coding_dev_developer">
@@ -23,7 +23,7 @@ const Home = ({ statePage }) => {
 									</g>
 								</svg>
 							</a>
-							<a href="https://t.me/+380978363634" className="social__telegram">
+							<a className="social__telegram" href="https://t.me/+380978363634">
 								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 									<title />
 									<g data-name="telegram social media network chat" id="telegram_social_media_network_chat">
@@ -31,7 +31,7 @@ const Home = ({ statePage }) => {
 									</g>
 								</svg>
 							</a>
-							<a href="https://join.skype.com/invite/KHSqeiGfNVJj" className="social__skipe">
+							<a className="social__skipe" href="https://join.skype.com/invite/KHSqeiGfNVJj">
 								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 									<title />
 									<g data-name="skype conference video call" id="skype_conference_video_call">
