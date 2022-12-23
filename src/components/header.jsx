@@ -3,7 +3,6 @@ import React from 'react';
 const myList = [
 	{ page: 'Головна', class: 'icon-home_icon', activ: 'header__activ icon-home_icon' },
 	{ page: 'Про мене', class: 'icon-about_icon', activ: 'header__activ icon-about_icon' },
-	{ page: 'Навички', class: 'icon-education_icon', activ: 'header__activ icon-education_icon' },
 	{ page: 'Портфоліо', class: 'icon-portfolio_icon', activ: 'header__activ icon-portfolio_icon' },
 	{ page: 'Контакти', class: 'icon-address_icon', activ: 'header__activ icon-address_icon' },
 ];
@@ -14,7 +13,6 @@ const Header = ({ valueState }) => {
 	const [hours, setHours] = React.useState(0);
 	const [dey, setDey] = React.useState(0);
 	const [minutes, setMinutes] = React.useState(0);
-	// const [data, setData] = React.useState(new Date());
 
 	const setValueState = (obj) => {
 		setActivPage(obj.page);
@@ -59,7 +57,7 @@ const Header = ({ valueState }) => {
 			</div>
 			<div className="header__body">
 				<div className="header__logotyp">
-					Web Deweloper <span>Kondratiev</span>
+					<span>K</span>ondratiev
 				</div>
 				<ul className="header__myList">
 					{myList.map((obj, index) => (

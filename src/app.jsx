@@ -4,7 +4,7 @@ import About from './components/about';
 import Header from './components/header';
 import Home from './components/home';
 import Portfolio from './components/portfolio';
-import Skill from './components/skill';
+import Contacts from './components/contacts';
 
 const App = () => {
 	const [activPage, setActivPage] = React.useState('Головна');
@@ -16,8 +16,8 @@ const App = () => {
 			<main className="main">
 				<Home statePage={activPage} />
 				<About statePage={activPage} />
-				<Skill statePage={activPage} />
 				<Portfolio statePage={activPage} />
+				<Contacts statePage={activPage} />
 			</main>
 		</div>
 	);

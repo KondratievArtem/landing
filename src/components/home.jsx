@@ -1,20 +1,52 @@
+import React from 'react';
 import myImg from '../assets/img/9.jpg';
 
+const about = ['Web Developer', 'Freelancer', 'Frontend'];
+let indexArr = 1;
+
 const Home = ({ statePage }) => {
+	const [myList, setMyList] = React.useState('Web Developer');
+
+	const textReplace = () => {
+		setTimeout(time, 5000);
+
+		function time() {
+			if (indexArr < about.length) {
+				setMyList(about[indexArr]);
+				indexArr++;
+			} else {
+				indexArr = 0;
+				setMyList(about[indexArr]);
+				indexArr++;
+			}
+			textReplace();
+		}
+	};
+
+	React.useEffect(() => {
+		textReplace();
+	}, []);
+
 	return (
 		<div className={statePage === 'Головна' ? 'home__root _block activPage' : 'home__root _block'}>
-			<div className="home__container container">
-				<div className="home__body">
-					<div className="home__content">
-						<p className="home__sub-title">привіт, мене звати</p>
+			<section className="home__title-page title-page">
+				<div className="title-page__container container">
+					<div className="title-page__content">
+						<p className="title-page__sub-title">привіт, мене звати</p>
 						<h1>
-							артем <span>кондратьєв</span>{' '}
+							артем <span>кондратьєв</span>
 						</h1>
-						{/* <p className="home__sup-title">я професійний web розробник</p> */}
-						<a className="home__dowlode" href="./cv" download="mycv.txt">
+						<div className="title-page__im">
+							<p className="title-page__im-about">Я займаюсь: </p>
+							<div className="title-page__im-text">{myList}</div>
+						</div>
+						<div className="title-page__content-text">
+							<p>Якщо Вам потрібно зробити сайт, верстку . Я це зроблю!!! Якщо Вам потрібний цінний працівник, то це я.</p>
+						</div>
+						<a className="title-page__dowlode" href="./cv" download="mycv.txt">
 							завантажити cv
 						</a>
-						<div className="home__social social">
+						<div className="title-page__social social">
 							<a className="social__githab" href="https://github.com/KondratievArtem">
 								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 									<title />
@@ -43,7 +75,8 @@ const Home = ({ statePage }) => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+
 			<div className="home__img _bg">
 				<img src={myImg} alt="fon" />
 			</div>

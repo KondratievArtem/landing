@@ -10,12 +10,17 @@
 	}
 	&__logotyp {
 		font-size: 2.4rem;
+		font-family: 'Conv_SecularOne';
 		span {
+			// font-family: 'Conv_SecularOne';
 			color: yellow;
-			font-size: 3rem;
+			font-size: 3.5rem;
 			letter-spacing: 0.3rem;
 			text-transform: uppercase;
-			font-weight: 600;
+			font-weight: 400;
+			// text-shadow: 5px 5px 30px #e8c606, -5px -5px 30px #060ce8;
+			// -webkit-text-stroke: 0.5px #e8c606;
+			// -webkit-text-fill-color: transparent;
 		}
 	}
 	&__myList {
