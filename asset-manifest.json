@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/landing/static/css/main.93206bf1.css",
-    "main.js": "/landing/static/js/main.5c6e9db9.js",
+    "main.js": "/landing/static/js/main.ae069e91.js",
     "static/media/certificate.png": "/landing/static/media/certificate.16a65aa0ce71e5a68d52.png",
     "static/media/SecularOne-Regular.svg": "/landing/static/media/SecularOne-Regular.70d196e637dd0c9f06f4.svg",
     "static/media/suimg.png": "/landing/static/media/suimg.a09ddb1de859fe307d52.png",
@@ -30,10 +30,10 @@
     "index.html": "/landing/index.html",
     "static/media/npm.svg": "/landing/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
     "main.93206bf1.css.map": "/landing/static/css/main.93206bf1.css.map",
-    "main.5c6e9db9.js.map": "/landing/static/js/main.5c6e9db9.js.map"
+    "main.ae069e91.js.map": "/landing/static/js/main.ae069e91.js.map"
   },
   "entrypoints": [
     "static/css/main.93206bf1.css",
-    "static/js/main.5c6e9db9.js"
+    "static/js/main.ae069e91.js"
   ]
 }
