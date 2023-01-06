@@ -14,7 +14,7 @@ const contacts = [
 		icon: telegram,
 		title: 'Телеграм',
 		text: 't.me/+380978363634',
-		linck: 'https://join.skype.com/invite/KHSqeiGfNVJj',
+		linck: 'https://t.me/+380978363634',
 	},
 	{
 		icon: skype,
@@ -26,7 +26,7 @@ const contacts = [
 		icon: email,
 		title: 'E-mail',
 		text: 'Kondrativ41@gmail.com',
-		linck: 'mailo:kondrativ41@gmail.com',
+		linck: 'mailto:kondrativ41@gmail.com',
 	},
 ];
 

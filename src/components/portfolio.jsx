@@ -12,13 +12,13 @@ const Portfolio = ({ statePage }) => {
 					</div>
 					<div className="portfolio__content">
 						{portfolio.map((obj, i) => (
-							<div className="portfolio__item portfolio-item" key={i}>
+							<a className="portfolio__item portfolio-item" href={obj.linck} key={i}>
 								<div className="portfolio-item__img">
 									<img src={obj.img} alt="img" />
 								</div>
 								<div className="portfolio-item__title"></div>
 								<div className="portfolio-item__disckription"></div>
-							</div>
+							</a>
 						))}
 					</div>
 				</div>

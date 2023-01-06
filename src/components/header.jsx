@@ -42,9 +42,9 @@ const Header = ({ valueState }) => {
 
 					<div className="time-war__clock">
 						<div className="time-war__hours">
-							<div>{hours}</div>
+							<div>{hours < 10 ? '0' + hours : hours}</div>
 							<span>:</span>
-							<div>{minutes}</div>
+							<div>{minutes < 10 ? '0' + minutes : minutes}</div>
 						</div>
 						<div className="time-war__clock-text">
 							<span>годин</span>

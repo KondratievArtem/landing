@@ -22,6 +22,9 @@
 }
 .title-page {
 	height: 88vh;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
 
 	&__container {
 		display: flex;

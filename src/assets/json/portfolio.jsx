@@ -5,7 +5,7 @@ const portfolio = [
 		img: su,
 		title: ' ',
 		description: ' ',
-		linck: ' ',
+		linck: 'https://github.com/KondratievArtem/SupportUkrenian',
 	},
 ];
 

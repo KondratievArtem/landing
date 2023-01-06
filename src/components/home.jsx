@@ -2,29 +2,18 @@ import React from 'react';
 import myImg from '../assets/img/9.jpg';
 
 const about = ['Web Developer', 'Freelancer', 'Frontend'];
-let indexArr = 1;
 
 const Home = ({ statePage }) => {
-	const [myList, setMyList] = React.useState('Web Developer');
+	const [indexArr, setIndexArr] = React.useState(0);
 
-	const textReplace = () => {
-		setTimeout(time, 5000);
-
-		function time() {
-			if (indexArr < about.length) {
-				setMyList(about[indexArr]);
-				indexArr++;
-			} else {
-				indexArr = 0;
-				setMyList(about[indexArr]);
-				indexArr++;
-			}
-			textReplace();
-		}
-	};
+	if (indexArr >= about.length) {
+		setIndexArr(0);
+	}
 
 	React.useEffect(() => {
-		textReplace();
+		setInterval(() => {
+			setIndexArr((prev) => prev + 0.5);
+		}, 5000);
 	}, []);
 
 	return (
@@ -38,12 +27,12 @@ const Home = ({ statePage }) => {
 						</h1>
 						<div className="title-page__im">
 							<p className="title-page__im-about">Я займаюсь: </p>
-							<div className="title-page__im-text">{myList}</div>
+							<div className="title-page__im-text">{about[indexArr]}</div>
 						</div>
 						<div className="title-page__content-text">
 							<p>Якщо Вам потрібно зробити сайт, верстку . Я це зроблю!!! Якщо Вам потрібний цінний працівник, то це я.</p>
 						</div>
-						<a className="title-page__dowlode" href="./cv" download="mycv.txt">
+						<a className="title-page__dowlode" href="./cv" download="my-cv.txt">
 							завантажити cv
 						</a>
 						<div className="title-page__social social">
@@ -75,11 +64,10 @@ const Home = ({ statePage }) => {
 						</div>
 					</div>
 				</div>
+				<div className="home__img _bg">
+					<img src={myImg} alt="fon" />
+				</div>
 			</section>
-
-			<div className="home__img _bg">
-				<img src={myImg} alt="fon" />
-			</div>
 		</div>
 	);
 };
