@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing/static/css/main.9b78d150.css",
-    "main.js": "/landing/static/js/main.35343412.js",
+    "main.css": "/landing/static/css/main.93206bf1.css",
+    "main.js": "/landing/static/js/main.5c6e9db9.js",
     "static/media/certificate.png": "/landing/static/media/certificate.16a65aa0ce71e5a68d52.png",
     "static/media/SecularOne-Regular.svg": "/landing/static/media/SecularOne-Regular.70d196e637dd0c9f06f4.svg",
     "static/media/suimg.png": "/landing/static/media/suimg.a09ddb1de859fe307d52.png",
@@ -29,11 +29,11 @@
     "static/media/figma.svg": "/landing/static/media/figma.72ff35026c53ba574aef54c980db0e8d.svg",
     "index.html": "/landing/index.html",
     "static/media/npm.svg": "/landing/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
-    "main.9b78d150.css.map": "/landing/static/css/main.9b78d150.css.map",
-    "main.35343412.js.map": "/landing/static/js/main.35343412.js.map"
+    "main.93206bf1.css.map": "/landing/static/css/main.93206bf1.css.map",
+    "main.5c6e9db9.js.map": "/landing/static/js/main.5c6e9db9.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b78d150.css",
-    "static/js/main.35343412.js"
+    "static/css/main.93206bf1.css",
+    "static/js/main.5c6e9db9.js"
   ]
 }
