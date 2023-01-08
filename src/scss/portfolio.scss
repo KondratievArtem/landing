@@ -9,14 +9,18 @@
 
 	&__content {
 		display: flex;
+		gap: 1.5rem;
 	}
 }
 
 .portfolio-item {
 	flex: 0 1 33.333%;
-	border: 5px solid #fff;
-	box-shadow: 1px 1px 10px rgba(250, 250, 250, 0.2), -1px -1px 10px rgba(250, 250, 250, 0.2);
+	box-shadow: 1px 1px 5px rgba(250, 250, 250, 0.2), -1px -1px 5px rgba(250, 250, 250, 0.2);
+
 	&__img {
+		display: flex;
+		width: 100%;
+		height: 100%;
 		img {
 			max-width: 100%;
 		}
@@ -24,5 +28,25 @@
 	&__title {
 	}
 	&__disckription {
+	}
+}
+
+// media pull-------------------
+// 950 px---------------
+@media (max-width: 59.375em) {
+	.portfolio-item {
+		flex: 0 1 50%;
+	}
+}
+
+// 450px===============
+@media (max-width: 28.125em) {
+	.portfolio {
+		&__content {
+			flex-wrap: wrap;
+		}
+	}
+	.portfolio-item {
+		flex: 0 1 100%;
 	}
 }

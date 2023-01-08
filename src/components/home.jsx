@@ -32,9 +32,9 @@ const Home = ({ statePage }) => {
 						<div className="title-page__content-text">
 							<p>Якщо Вам потрібно зробити сайт, верстку . Я це зроблю!!! Якщо Вам потрібний цінний працівник, то це я.</p>
 						</div>
-						<a className="title-page__dowlode" href="./cv" download="my-cv.txt">
+						{/* <a className="title-page__dowlode" href="./cv" download="my-cv.txt">
 							завантажити cv
-						</a>
+						</a> */}
 						<div className="title-page__social social">
 							<a className="social__githab" href="https://github.com/KondratievArtem">
 								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

@@ -57,11 +57,11 @@ const About = ({ statePage }) => {
 									<img src={certificate} alt="certificate" />
 								</div>
 							</div>
-							<div>
+							{/* <div>
 								<a className="title-page__dowlode" href="./cv" download="mycv.txt">
 									завантажити cv
 								</a>
-							</div>
+							</div> */}
 						</div>
 					</section>
 					<section className="about__informacion informacion">

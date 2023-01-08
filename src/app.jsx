@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // ========
 import About from './components/about';
 import Header from './components/header';
@@ -8,6 +8,7 @@ import Contacts from './components/contacts';
 
 const App = () => {
 	const [activPage, setActivPage] = React.useState('Головна');
+
 	return (
 		<div className="wrapper">
 			<header className="header">
