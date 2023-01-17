@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/landing/static/css/main.0e330ebb.css",
-    "main.js": "/landing/static/js/main.66e40923.js",
+    "main.js": "/landing/static/js/main.5bbb3020.js",
     "static/media/relvise.png": "/landing/static/media/relvise.f102f1bd890ded41cbb1.png",
     "static/media/certificate.png": "/landing/static/media/certificate.16a65aa0ce71e5a68d52.png",
     "static/media/SecularOne-Regular.svg": "/landing/static/media/SecularOne-Regular.70d196e637dd0c9f06f4.svg",
@@ -10,6 +10,7 @@
     "static/media/SecularOne-Regular.eot": "/landing/static/media/SecularOne-Regular.4c9452129098f9e7594b.eot",
     "static/media/SecularOne-Regular.ttf": "/landing/static/media/SecularOne-Regular.141c1f3e034514617e8b.ttf",
     "static/media/SecularOne-Regular.woff": "/landing/static/media/SecularOne-Regular.ac9890260f97a79520c9.woff",
+    "static/media/react_завдання.png": "/landing/static/media/react_завдання.844def7013f41f0f6473.png",
     "static/media/icomoon.svg?i88a6n": "/landing/static/media/icomoon.68a95ad2ab153466a1c9.svg",
     "static/media/react.svg": "/landing/static/media/react.2aba3989d4112d5c30f137fbaeae484d.svg",
     "static/media/icomoon.eot?i88a6n": "/landing/static/media/icomoon.ce706e616f4763043c64.eot",
@@ -31,10 +32,10 @@
     "index.html": "/landing/index.html",
     "static/media/npm.svg": "/landing/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
     "main.0e330ebb.css.map": "/landing/static/css/main.0e330ebb.css.map",
-    "main.66e40923.js.map": "/landing/static/js/main.66e40923.js.map"
+    "main.5bbb3020.js.map": "/landing/static/js/main.5bbb3020.js.map"
   },
   "entrypoints": [
     "static/css/main.0e330ebb.css",
-    "static/js/main.66e40923.js"
+    "static/js/main.5bbb3020.js"
   ]
 }
