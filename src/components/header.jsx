@@ -18,6 +18,7 @@ const Header = ({ valueState }) => {
 		setActivPage(obj.page);
 		valueState(obj.page);
 	};
+
 	const startTimeData = new Date(2022, 1, 24).getTime();
 	setTimeout(function request() {
 		const getCurrentData = new Date().getTime();
@@ -75,12 +76,13 @@ const Header = ({ valueState }) => {
 					<div className="burger-menu__open-close" onClick={() => setActivMenu(!activManu)}>
 						<span></span>
 					</div>
-					<ul className="burger-menu__burgerList">
+					<ul className="burger-menu__burgerList" onClick={() => setActivMenu(false)}>
 						{myList.map((obj, index) => (
 							<li
 								className={activPage === obj.page ? obj.activ : obj.class}
 								onClick={() => {
 									setValueState(obj);
+									setActivMenu(false);
 								}}
 								key={index}>
 								<span>{obj.page}</span>
