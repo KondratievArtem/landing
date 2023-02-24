@@ -12,7 +12,7 @@ const Home = ({ statePage }) => {
 
 	React.useEffect(() => {
 		setInterval(() => {
-			setIndexArr((prev) => prev + 0.5);
+			setIndexArr((prev) => prev + 1);
 		}, 5000);
 	}, []);
 
