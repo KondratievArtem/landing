@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/landing/static/css/main.c49cc034.css",
-    "main.js": "/landing/static/js/main.d3bccf6e.js",
+    "main.css": "/landing/static/css/main.aa1089e0.css",
+    "main.js": "/landing/static/js/main.6fb9b90b.js",
     "static/media/relvise.png": "/landing/static/media/relvise.f102f1bd890ded41cbb1.png",
+    "static/media/Главная2.png": "/landing/static/media/Главная2.ebd2a175cfcbbf6e7f4c.png",
     "static/media/certificate.png": "/landing/static/media/certificate.16a65aa0ce71e5a68d52.png",
     "static/media/SecularOne-Regular.svg": "/landing/static/media/SecularOne-Regular.70d196e637dd0c9f06f4.svg",
     "static/media/suimg.png": "/landing/static/media/suimg.a09ddb1de859fe307d52.png",
@@ -31,11 +32,11 @@
     "static/media/figma.svg": "/landing/static/media/figma.72ff35026c53ba574aef54c980db0e8d.svg",
     "index.html": "/landing/index.html",
     "static/media/npm.svg": "/landing/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
-    "main.c49cc034.css.map": "/landing/static/css/main.c49cc034.css.map",
-    "main.d3bccf6e.js.map": "/landing/static/js/main.d3bccf6e.js.map"
+    "main.aa1089e0.css.map": "/landing/static/css/main.aa1089e0.css.map",
+    "main.6fb9b90b.js.map": "/landing/static/js/main.6fb9b90b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c49cc034.css",
-    "static/js/main.d3bccf6e.js"
+    "static/css/main.aa1089e0.css",
+    "static/js/main.6fb9b90b.js"
   ]
 }
