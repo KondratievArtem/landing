@@ -2,22 +2,21 @@
 	&__root {
 		background-color: rgb(1, 1, 1);
 		font-size: 1.6rem;
-	}
-
-	&__body {
+		padding: 2.5rem 0;
 	}
 
 	&__content {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 10px;
+		gap: 1.5rem;
 	}
 }
 
 .portfolio-item {
 	flex: 0 1 33.333%;
 	box-shadow: 1px 1px 5px rgba(250, 250, 250, 0.2), -1px -1px 5px rgba(250, 250, 250, 0.2);
-
+	position: relative;
+	overflow: hidden;
 	&__img {
 		display: flex;
 		width: 100%;
@@ -28,30 +27,59 @@
 	}
 	&__title {
 	}
-	&__disckription {
+	&__description {
+		position: absolute;
+		top: 110%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(250, 250, 250, 0.5);
+		backdrop-filter: blur(10px);
+		transition: all 0.3s ease;
+		border: 1px solid rgba($color: #000000, $alpha: 0.6);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		a {
+			flex: 0 1 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			max-width: 75px;
+			background-color: rgba($color: #3ba3a1, $alpha: 0.5);
+			border-radius: 50%;
+
+			svg {
+				fill: white;
+			}
+		}
+
+		&.active {
+			top: 0;
+		}
 	}
 }
 
 // media pull-------------------
 // 950 px---------------
 @media (max-width: 59.375em) {
-	.portfolio-item {
-		flex: 0 1 50%;
-	}
-}
-
-// 820 px---------------
-@media (max-width: 51.25em) {
 	.portfolio {
 		&__content {
 			grid-template-columns: repeat(2, 1fr);
 		}
+	}
+	.portfolio-item {
+		flex: 0 1 50%;
 	}
 }
 
 // 450px===============
 @media (max-width: 28.125em) {
 	.portfolio {
+		&__root {
+			padding: 0.5rem 0;
+		}
 		&__content {
 			grid-template-columns: 1fr;
 		}
@@ -60,6 +88,6 @@
 		flex: 0 1 100%;
 	}
 	.portfolio-item:last-child {
-		margin-bottom: 8rem;
+		margin-bottom: 1rem;
 	}
 }
