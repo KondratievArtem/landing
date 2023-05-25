@@ -1,4 +1,8 @@
 import React, { useEffect } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// ========
+import './scss/app.scss';
 // ========
 import About from './components/about';
 import Header from './components/header';
@@ -25,3 +29,7 @@ const App = () => {
 };
 
 export default App;
+
+{
+	/* */
+}

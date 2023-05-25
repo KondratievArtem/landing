@@ -8,8 +8,9 @@
 	}
 
 	&__content {
-		display: flex;
-		gap: 1.5rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
 	}
 }
 
@@ -39,11 +40,20 @@
 	}
 }
 
+// 820 px---------------
+@media (max-width: 51.25em) {
+	.portfolio {
+		&__content {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
 // 450px===============
 @media (max-width: 28.125em) {
 	.portfolio {
 		&__content {
-			flex-wrap: wrap;
+			grid-template-columns: 1fr;
 		}
 	}
 	.portfolio-item {

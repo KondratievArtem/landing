@@ -13,13 +13,13 @@ const Header = ({ valueState }) => {
 	const [hours, setHours] = React.useState(0);
 	const [dey, setDey] = React.useState(0);
 	const [minutes, setMinutes] = React.useState(0);
+	const startTimeData = new Date(2022, 1, 24).getTime();
 
 	const setValueState = (obj) => {
 		setActivPage(obj.page);
 		valueState(obj.page);
 	};
 
-	const startTimeData = new Date(2022, 1, 24).getTime();
 	setTimeout(function request() {
 		const getCurrentData = new Date().getTime();
 		let differenceData = getCurrentData - startTimeData;
