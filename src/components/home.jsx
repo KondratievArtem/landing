@@ -2,7 +2,7 @@ import React from 'react';
 import myImg from '../assets/img/9.jpg';
 import '../scss/home.scss';
 
-const about = ['Web Developer', '', 'Freelancer', '', 'Frontend'];
+const about = ['Web Developer', 'Freelancer', 'Frontend'];
 
 const Home = () => {
 	const [indexArr, setIndexArr] = React.useState(0);
