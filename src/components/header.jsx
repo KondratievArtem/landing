@@ -1,25 +1,18 @@
 import React from 'react';
+// =======
+import '../scss/header.scss';
+// ========
+import { myList } from '../assets/json/information';
 
-const myList = [
-	{ page: 'Головна', class: 'icon-home_icon', activ: 'header__activ icon-home_icon' },
-	{ page: 'Про мене', class: 'icon-about_icon', activ: 'header__activ icon-about_icon' },
-	{ page: 'Портфоліо', class: 'icon-portfolio_icon', activ: 'header__activ icon-portfolio_icon' },
-	{ page: 'Контакти', class: 'icon-address_icon', activ: 'header__activ icon-address_icon' },
-];
-
-const Header = ({ valueState }) => {
-	const [activPage, setActivPage] = React.useState('Головна');
-	const [activManu, setActivMenu] = React.useState(false);
+const Header = () => {
+	const [activePage, setActivePage] = React.useState(myList[0].page);
+	const [activeMenu, setActiveMenu] = React.useState(false);
+	// =======
 	const [hours, setHours] = React.useState(0);
 	const [dey, setDey] = React.useState(0);
 	const [minutes, setMinutes] = React.useState(0);
+	// timer war
 	const startTimeData = new Date(2022, 1, 24).getTime();
-
-	const setValueState = (obj) => {
-		setActivPage(obj.page);
-		valueState(obj.page);
-	};
-
 	setTimeout(function request() {
 		const getCurrentData = new Date().getTime();
 		let differenceData = getCurrentData - startTimeData;
@@ -28,11 +21,12 @@ const Header = ({ valueState }) => {
 		setDey(Math.floor(differenceData / (1000 * 60 * 60 * 24)));
 		setTimeout(request, 1000);
 	}, 1000);
+
 	return (
 		<div className="container">
 			<div className="header__time-war time-war">
 				<div>Війна триває:</div>
-				<div className="time-war__displey displey">
+				<div className="time-war__display display">
 					<div className="time-war__dey-body">
 						<div className="time-war__dey">
 							<div className="time-war__dey-decor"></div>
@@ -57,38 +51,36 @@ const Header = ({ valueState }) => {
 				</div>
 			</div>
 			<div className="header__body">
-				<div className="header__logotyp">
-					<span>K</span>ondratiev
+				<div className="header__logo">
+					<a href="#">
+						<span>K</span>ondratiev
+					</a>
 				</div>
-				<ul className="header__myList">
+				<nav className="header__myList">
 					{myList.map((obj, index) => (
-						<li
-							className={activPage === obj.page ? obj.activ : obj.class}
-							onClick={() => {
-								setValueState(obj);
-							}}
-							key={index}>
+						<a href={`#${obj.page}`} className="active" key={index}>
 							{obj.page}
-						</li>
+						</a>
 					))}
-				</ul>
-				<div className={activManu ? 'header__burger-menu burger-menu activ' : 'header__burger-menu burger-menu'}>
-					<div className="burger-menu__open-close" onClick={() => setActivMenu(!activManu)}>
+				</nav>
+				<div className={activeMenu ? 'header__burger-menu burger-menu active' : 'header__burger-menu burger-menu'}>
+					<div className="burger-menu__open-close" onClick={() => setActiveMenu(!activeMenu)}>
 						<span></span>
 					</div>
-					<ul className="burger-menu__burgerList" onClick={() => setActivMenu(false)}>
+					<nav className="burger-menu__burgerList" onClick={() => setActiveMenu(false)}>
 						{myList.map((obj, index) => (
-							<li
-								className={activPage === obj.page ? obj.activ : obj.class}
+							<a
+								className={activePage === obj.page ? obj.active : obj.class}
+								href={`#${obj.page}`}
 								onClick={() => {
-									setValueState(obj);
-									setActivMenu(false);
+									setActivePage(obj.page);
+									setActiveMenu(false);
 								}}
 								key={index}>
 								<span>{obj.page}</span>
-							</li>
+							</a>
 						))}
-					</ul>
+					</nav>
 				</div>
 			</div>
 		</div>

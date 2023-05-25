@@ -1,9 +1,10 @@
 import React from 'react';
 import myImg from '../assets/img/9.jpg';
+import '../scss/home.scss';
 
-const about = ['Web Developer', 'Freelancer', 'Frontend'];
+const about = ['Web Developer', '', 'Freelancer', '', 'Frontend'];
 
-const Home = ({ statePage }) => {
+const Home = () => {
 	const [indexArr, setIndexArr] = React.useState(0);
 
 	if (indexArr >= about.length) {
@@ -17,7 +18,7 @@ const Home = ({ statePage }) => {
 	}, []);
 
 	return (
-		<div className={statePage === 'Головна' ? 'home__root _block activPage' : 'home__root _block'}>
+		<section className="home__root" id="Головна">
 			<section className="home__title-page title-page">
 				<div className="title-page__container container">
 					<div className="title-page__content">
@@ -36,7 +37,7 @@ const Home = ({ statePage }) => {
 							завантажити cv
 						</a> */}
 						<div className="title-page__social social">
-							<a className="social__githab" href="https://github.com/KondratievArtem">
+							<a className="social__github" href="https://github.com/KondratievArtem">
 								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 									<title />
 									<g data-name="github coding dev developer" id="github_coding_dev_developer">
@@ -52,7 +53,7 @@ const Home = ({ statePage }) => {
 									</g>
 								</svg>
 							</a>
-							<a className="social__skipe" href="https://join.skype.com/invite/KHSqeiGfNVJj">
+							<a className="social__skip" href="https://join.skype.com/invite/KHSqeiGfNVJj">
 								<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 									<title />
 									<g data-name="skype conference video call" id="skype_conference_video_call">
@@ -68,7 +69,7 @@ const Home = ({ statePage }) => {
 					<img src={myImg} alt="fon" />
 				</div>
 			</section>
-		</div>
+		</section>
 	);
 };
 

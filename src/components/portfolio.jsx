@@ -1,8 +1,22 @@
+import React from 'react';
 import portfolio from '../assets/json/portfolio';
+import '../scss/portfolio.scss';
+import git from '../assets/img/github.svg';
 
-const Portfolio = ({ statePage }) => {
+const Portfolio = () => {
+	const [isPopup, setIsPopup] = React.useState(null);
+
+	const showPopup = (i) => {
+		let count = 0;
+		if (isPopup === i) {
+			count++;
+		}
+		console.log(count);
+		if (count > 0) return setIsPopup(null);
+		setIsPopup(i);
+	};
 	return (
-		<div className={statePage === 'Портфоліо' ? 'portfolio__root _block activPage' : 'portfolio__root _block'}>
+		<section className="portfolio__root" id="Портфоліо">
 			<div className="container">
 				<div className="portfolio__body">
 					<div className="portfolio__title title">
@@ -12,18 +26,35 @@ const Portfolio = ({ statePage }) => {
 					</div>
 					<div className="portfolio__content">
 						{portfolio.map((obj, i) => (
-							<a className="portfolio__item portfolio-item" href={obj.linck} key={i}>
+							<div className="portfolio__item portfolio-item" key={i} onClick={() => showPopup(i)}>
 								<div className="portfolio-item__img">
 									<img src={obj.img} alt="img" />
 								</div>
-								<div className="portfolio-item__title"></div>
-								<div className="portfolio-item__disckription"></div>
-							</a>
+
+								<div className={`portfolio-item__description ${isPopup === i ? 'active' : ''}`}>
+									<a href={obj.github} target="_blank" rel="noopener noreferrer">
+										<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+											<title />
+											<g data-name="github coding dev developer" id="github_coding_dev_developer">
+												<path d="M16,3a13,13,0,0,0-3.46,25.53,1,1,0,1,0,.53-1.92,11,11,0,1,1,7-.4,15.85,15.85,0,0,0-.3-3.92A6.27,6.27,0,0,0,24.68,16a6.42,6.42,0,0,0-1.05-3.87,7.09,7.09,0,0,0-.4-3.36,1,1,0,0,0-1.1-.67,8,8,0,0,0-3.37,1.28A11.35,11.35,0,0,0,16,9a13.09,13.09,0,0,0-3,.43A5.74,5.74,0,0,0,9.62,8.25a1,1,0,0,0-1,.66,7.06,7.06,0,0,0-.37,3.19A7.15,7.15,0,0,0,7.2,16a6.66,6.66,0,0,0,5,6.28,7.43,7.43,0,0,0-.15.79c-1,.06-1.58-.55-2.32-1.48a3.45,3.45,0,0,0-1.94-1.53,1,1,0,0,0-1.15.76A1,1,0,0,0,7.35,22c.16,0,.55.52.77.81a4.74,4.74,0,0,0,3.75,2.25,4.83,4.83,0,0,0,1.3-.18h0a1,1,0,0,0,.29-.14l0,0a.72.72,0,0,0,.18-.21.34.34,0,0,0,.08-.09.85.85,0,0,0,.06-.17,1.52,1.52,0,0,0,.06-.2v0a4.11,4.11,0,0,1,.46-1.91,1,1,0,0,0-.76-1.65A4.6,4.6,0,0,1,9.2,16a4.84,4.84,0,0,1,.87-3,1,1,0,0,0,.24-.83,5,5,0,0,1,0-1.85,3.59,3.59,0,0,1,1.74.92,1,1,0,0,0,1,.23A12.49,12.49,0,0,1,16,11a9.91,9.91,0,0,1,2.65.43,1,1,0,0,0,1-.18,5,5,0,0,1,2-1,4.11,4.11,0,0,1,0,1.91,1.05,1.05,0,0,0,.32,1A4,4,0,0,1,22.68,16a4.29,4.29,0,0,1-4.41,4.46,1,1,0,0,0-.94.65,1,1,0,0,0,.28,1.11c.59.51.5,4,.47,5.36a1,1,0,0,0,.38.81,1,1,0,0,0,.62.21,1.07,1.07,0,0,0,.25,0A13,13,0,0,0,16,3Z" />
+											</g>
+										</svg>
+									</a>
+									<a href="#">
+										<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+											<title />
+											<g data-name="world www web website" id="world_www_web_website">
+												<path d="M16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Zm6.69,16.91A24.39,24.39,0,0,0,23,16a23.72,23.72,0,0,0-.32-3.91C25.37,13.08,27,14.58,27,16S25.31,19,22.69,19.91ZM5,16c0-1.47,1.69-2.95,4.31-3.91A24.39,24.39,0,0,0,9,16a23.72,23.72,0,0,0,.32,3.91C6.63,18.92,5,17.42,5,16ZM11.5,6A14.2,14.2,0,0,0,9.82,9.82,14.19,14.19,0,0,0,6,11.49,11,11,0,0,1,11.5,6ZM6,20.5a14.63,14.63,0,0,0,4.32,1.8l.09,0A23.4,23.4,0,0,0,16,23c.6,0,1.19,0,1.76-.06a1,1,0,1,0-.14-2Q16.83,21,16,21a20.92,20.92,0,0,1-4.52-.47A21.33,21.33,0,0,1,11,16c0-6.48,2.64-11,5-11,1,0,2,.76,2.89,2.14a1,1,0,0,0,.84.47,1,1,0,0,0,.54-.15,1,1,0,0,0,.31-1.38.86.86,0,0,0-.07-.1A11,11,0,0,1,26,11.5a14.94,14.94,0,0,0-4.48-1.84l0,0A23.21,23.21,0,0,0,16,9c-.6,0-1.19,0-1.76.06a1,1,0,1,0,.14,2Q15.18,11,16,11a20.92,20.92,0,0,1,4.52.47A21.33,21.33,0,0,1,21,16c0,6.48-2.64,11-5,11-1,0-2-.76-2.89-2.14a1,1,0,1,0-1.69,1.06.86.86,0,0,0,.07.1A11,11,0,0,1,6,20.5ZM20.5,26a14.2,14.2,0,0,0,1.68-3.85A14.19,14.19,0,0,0,26,20.51,11,11,0,0,1,20.5,26Z" />
+											</g>
+										</svg>
+									</a>
+								</div>
+							</div>
 						))}
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

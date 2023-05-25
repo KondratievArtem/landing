@@ -1,5 +1,4 @@
 .header {
-	position: relative;
 	z-index: 30;
 
 	&__body {
@@ -8,19 +7,15 @@
 		justify-content: space-between;
 		padding: 0.5rem 0;
 	}
-	&__logotyp {
+	&__logo {
 		font-size: 2.4rem;
 		font-family: 'Conv_SecularOne';
 		span {
-			// font-family: 'Conv_SecularOne';
 			color: yellow;
 			font-size: 3.5rem;
 			letter-spacing: 0.3rem;
 			text-transform: uppercase;
 			font-weight: 400;
-			// text-shadow: 5px 5px 30px #e8c606, -5px -5px 30px #060ce8;
-			// -webkit-text-stroke: 0.5px #e8c606;
-			// -webkit-text-fill-color: transparent;
 		}
 	}
 	&__myList {
@@ -29,16 +24,16 @@
 		justify-content: space-between;
 		width: 55rem;
 
-		li {
+		a {
 			cursor: pointer;
 			margin-left: 0.5rem;
 		}
 
-		li:hover {
+		a:hover {
 			color: yellow;
 		}
 	}
-	&__activ::after {
+	&__active::after {
 		content: ' ';
 		display: block;
 		width: 100%;
@@ -62,7 +57,7 @@
 		margin: 0 1rem 0 0;
 	}
 
-	&__displey {
+	&__display {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -190,7 +185,7 @@
 		}
 	}
 
-	.burger-menu.activ .burger-menu {
+	.burger-menu.active .burger-menu {
 		&__open-close {
 			width: 3rem;
 			height: 3rem;
@@ -223,7 +218,7 @@
 			padding: 9rem 5rem;
 			z-index: 1000;
 			background-color: rgba(24, 24, 23, 0.95);
-			li {
+			a {
 				text-align: right;
 				margin-bottom: 2rem;
 			}
@@ -260,7 +255,7 @@
 			display: flex;
 			justify-content: space-between;
 
-			li {
+			a {
 				font-size: 2.4rem;
 				padding: 1rem;
 				border-radius: 50%;
