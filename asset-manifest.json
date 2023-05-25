@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/landing/static/css/main.35adce99.css",
-    "main.js": "/landing/static/js/main.aededd84.js",
+    "main.js": "/landing/static/js/main.bb0a12c8.js",
     "static/media/relvise.png": "/landing/static/media/relvise.f102f1bd890ded41cbb1.png",
     "static/media/Главная2.png": "/landing/static/media/Главная2.ebd2a175cfcbbf6e7f4c.png",
     "static/media/certificate.png": "/landing/static/media/certificate.16a65aa0ce71e5a68d52.png",
@@ -34,10 +34,10 @@
     "index.html": "/landing/index.html",
     "static/media/npm.svg": "/landing/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
     "main.35adce99.css.map": "/landing/static/css/main.35adce99.css.map",
-    "main.aededd84.js.map": "/landing/static/js/main.aededd84.js.map"
+    "main.bb0a12c8.js.map": "/landing/static/js/main.bb0a12c8.js.map"
   },
   "entrypoints": [
     "static/css/main.35adce99.css",
-    "static/js/main.aededd84.js"
+    "static/js/main.bb0a12c8.js"
   ]
 }
