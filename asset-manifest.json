@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/landing/static/css/main.e728227d.css",
-    "main.js": "/landing/static/js/main.8ea7d4b4.js",
+    "main.css": "/landing/static/css/main.35adce99.css",
+    "main.js": "/landing/static/js/main.aededd84.js",
     "static/media/relvise.png": "/landing/static/media/relvise.f102f1bd890ded41cbb1.png",
     "static/media/Главная2.png": "/landing/static/media/Главная2.ebd2a175cfcbbf6e7f4c.png",
     "static/media/certificate.png": "/landing/static/media/certificate.16a65aa0ce71e5a68d52.png",
-    "static/media/SecularOne-Regular.svg": "/landing/static/media/SecularOne-Regular.0798dc6742e1e418f5d4.svg",
+    "static/media/SecularOne-Regular.svg": "/landing/static/media/SecularOne-Regular.70d196e637dd0c9f06f4.svg",
     "static/media/suimg.png": "/landing/static/media/suimg.a09ddb1de859fe307d52.png",
     "static/media/9.jpg": "/landing/static/media/9.995a33cb4c470c790193.jpg",
     "static/media/SecularOne-Regular.eot": "/landing/static/media/SecularOne-Regular.4c9452129098f9e7594b.eot",
     "static/media/SecularOne-Regular.ttf": "/landing/static/media/SecularOne-Regular.141c1f3e034514617e8b.ttf",
     "static/media/SecularOne-Regular.woff": "/landing/static/media/SecularOne-Regular.ac9890260f97a79520c9.woff",
     "static/media/react_завдання.png": "/landing/static/media/react_завдання.844def7013f41f0f6473.png",
-    "static/media/icomoon.svg?i88a6n": "/landing/static/media/icomoon.a37c7b9e268fea98e9cc.svg",
-    "static/media/react.svg": "/landing/static/media/react.acecaab0434bde9efb00b8e3726a79b3.svg",
+    "static/media/icomoon.svg?i88a6n": "/landing/static/media/icomoon.68a95ad2ab153466a1c9.svg",
+    "static/media/react.svg": "/landing/static/media/react.2aba3989d4112d5c30f137fbaeae484d.svg",
     "static/media/icomoon.eot?i88a6n": "/landing/static/media/icomoon.ce706e616f4763043c64.eot",
     "static/media/icomoon.woff?i88a6n": "/landing/static/media/icomoon.ba57c0df5847cc95c6dd.woff",
     "static/media/icomoon.ttf?i88a6n": "/landing/static/media/icomoon.54c3cc2faab11bff1769.ttf",
     "static/media/node.svg": "/landing/static/media/node.615ffbea9529ca7047ed8a912bfd94b2.svg",
     "static/media/git.svg": "/landing/static/media/git.24aef60951b7022aae9559602954625b.svg",
-    "static/media/redux.svg": "/landing/static/media/redux.aa2498413873aacebd77d7a869fde38b.svg",
-    "static/media/css.svg": "/landing/static/media/css.67308595064d43076a8fd4201787930f.svg",
+    "static/media/redux.svg": "/landing/static/media/redux.d71a7d29e65f8b26812c0d9a746f012a.svg",
+    "static/media/css.svg": "/landing/static/media/css.0b09912df8cffb8d5bb17ae81cb2c838.svg",
+    "static/media/github.svg": "/landing/static/media/github.0c8b80d4210915bb885297edd3c0f1b2.svg",
     "static/media/skype.svg": "/landing/static/media/skype.c95438f13c0d93e5fda622df1f3b1656.svg",
     "static/media/phone.svg": "/landing/static/media/phone.d578732693a0d40bbb67ce5e131eecbb.svg",
     "static/media/js.svg": "/landing/static/media/js.45687a3d83053bd27bac35627e904d53.svg",
@@ -32,11 +33,11 @@
     "static/media/figma.svg": "/landing/static/media/figma.72ff35026c53ba574aef54c980db0e8d.svg",
     "index.html": "/landing/index.html",
     "static/media/npm.svg": "/landing/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
-    "main.e728227d.css.map": "/landing/static/css/main.e728227d.css.map",
-    "main.8ea7d4b4.js.map": "/landing/static/js/main.8ea7d4b4.js.map"
+    "main.35adce99.css.map": "/landing/static/css/main.35adce99.css.map",
+    "main.aededd84.js.map": "/landing/static/js/main.aededd84.js.map"
   },
   "entrypoints": [
-    "static/css/main.e728227d.css",
-    "static/js/main.8ea7d4b4.js"
+    "static/css/main.35adce99.css",
+    "static/js/main.aededd84.js"
   ]
 }
