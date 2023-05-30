@@ -29,46 +29,50 @@ const About = () => {
 							<p>* Високий рівень мотивації та активна громадянська позиція. Мотивація бути причетним до масштабних проєктів.</p>
 						</div>
 						<div className="about-me__columns">
-							<dl className="about-me__column">
-								<dt>
-									День народження: <span>09 серпня 1991р.</span>
-								</dt>
-								<dt>
-									Місто : <span>Кривий Ріг</span>
-								</dt>
-								<dt>
-									Freelance:
-									<span>
+							<div className="about-me__column">
+								<dl>
+									<dt>День народження:</dt> <dd>09 серпня 1991р.</dd>
+								</dl>
+								<dl>
+									<dt>Місто:</dt> <dd>Кривий Ріг</dd>
+								</dl>
+								<dl>
+									<dt>Freelance:</dt>
+									<dd>
 										<a href="https://freelancehunt.com/freelancer/KondratievArtem.html "> Freelancehunt</a>
-									</span>
-								</dt>
-							</dl>
-							<dl className="about-me__column">
-								<dt>
-									Вік: <span>31</span>
-								</dt>
-								<dt>
-									E-mail:
-									<address>
-										<a href="mailto:kondrativ41@gmail.com"> kondrativ41@gmail.com</a>
-									</address>
-								</dt>
-								<dt>
-									Телефон:
-									<address>
-										<a href="tel:+380978363634"> +38 097 836 36 34</a>
-									</address>
-								</dt>
-							</dl>
-							<dl className="about-me__column">
+									</dd>
+								</dl>
+							</div>
+							<div className="about-me__column">
+								<dl>
+									<dt>Вік:</dt> <dd>31</dd>
+								</dl>
+								<dl>
+									<dt>E-mail:</dt>
+									<dd>
+										<address>
+											<a href="mailto:kondrativ41@gmail.com"> kondrativ41@gmail.com</a>
+										</address>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Телефон:</dt>
+									<dd>
+										<address>
+											<a href="tel:+380978363634"> +38 097 836 36 34</a>
+										</address>
+									</dd>
+								</dl>
+							</div>
+							<div className="about-me__column">
 								<img src={certificate} alt="certificate" onClick={() => setIsPopup(true)} />
 								{isPopup && (
-									<dt className="about-me__column_popup">
+									<div className="about-me__column_popup">
 										<i className="about-me__column_popup-close" onClick={() => setIsPopup(false)}></i>
 										<img src={certificate} alt="certificate" />
-									</dt>
+									</div>
 								)}
-							</dl>
+							</div>
 						</div>
 						{/* <div>
 								<a className="title-page__downloaded" href="./cv" download="mycv.txt">

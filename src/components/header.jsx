@@ -3,6 +3,7 @@ import React from 'react';
 import '../scss/header.scss';
 // ========
 import { myList, startTimeData } from '../assets/json/information';
+console.log(startTimeData);
 
 const Header = () => {
 	const [activePage, setActivePage] = React.useState(myList[0].page);
@@ -12,14 +13,14 @@ const Header = () => {
 	const [dey, setDey] = React.useState(0);
 	const [minutes, setMinutes] = React.useState(0);
 	// timer war
-
 	setTimeout(function request() {
-		const getCurrentData = new Date().getTime();
+		const getCurrentData = Math.floor(new Date().getTime() / (1000 * 60));
+		console.log(getCurrentData);
 		let differenceData = getCurrentData - startTimeData;
-		setMinutes(Math.floor((differenceData % (1000 * 60 * 60)) / (1000 * 60)));
-		setHours(Math.floor((differenceData % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-		setDey(Math.floor(differenceData / (1000 * 60 * 60 * 24)));
-		setTimeout(request, 1000);
+		setMinutes(Math.floor(differenceData % 60));
+		setHours(Math.floor((differenceData % (60 * 24)) / 60));
+		setDey(Math.floor(differenceData / (60 * 24)));
+		setTimeout(request, 60000);
 	}, 1000);
 
 	return (

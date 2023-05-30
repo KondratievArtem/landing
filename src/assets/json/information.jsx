@@ -113,4 +113,4 @@ export const myList = [
 	{ page: 'Контакти', class: 'icon-address_icon', active: 'active icon-address_icon' },
 ];
 
-export const startTimeData = new Date(2022, 1, 24).getTime();
+export const startTimeData = new Date(2022, 1, 24).getTime() / (1000 * 60);
