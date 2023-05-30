@@ -11,7 +11,6 @@ const Portfolio = () => {
 		if (isPopup === i) {
 			count++;
 		}
-		console.log(count);
 		if (count > 0) return setIsPopup(null);
 		setIsPopup(i);
 	};
@@ -31,7 +30,7 @@ const Portfolio = () => {
 									<img src={obj.img} alt="img" />
 								</div>
 
-								<div className={`portfolio-item__description ${isPopup === i ? 'active' : ''}`}>
+								<div className={`portfolio-item__popup ${isPopup === i ? 'active' : ''}`}>
 									<a href={obj.github} target="_blank" rel="noopener noreferrer">
 										<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 											<title />

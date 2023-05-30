@@ -2,7 +2,7 @@ import React from 'react';
 // =======
 import '../scss/header.scss';
 // ========
-import { myList } from '../assets/json/information';
+import { myList, startTimeData } from '../assets/json/information';
 
 const Header = () => {
 	const [activePage, setActivePage] = React.useState(myList[0].page);
@@ -12,7 +12,7 @@ const Header = () => {
 	const [dey, setDey] = React.useState(0);
 	const [minutes, setMinutes] = React.useState(0);
 	// timer war
-	const startTimeData = new Date(2022, 1, 24).getTime();
+
 	setTimeout(function request() {
 		const getCurrentData = new Date().getTime();
 		let differenceData = getCurrentData - startTimeData;
@@ -58,25 +58,25 @@ const Header = () => {
 				</div>
 				<nav className="header__myList">
 					{myList.map((obj, index) => (
-						<a href={`#${obj.page}`} className="active" key={index}>
+						<a href={`#${obj.page}`} key={index}>
 							{obj.page}
 						</a>
 					))}
 				</nav>
-				<div className={activeMenu ? 'header__burger-menu burger-menu active' : 'header__burger-menu burger-menu'}>
+				<div className={`header__burger-menu burger-menu ${activeMenu ? 'active' : ''} `}>
 					<div className="burger-menu__open-close" onClick={() => setActiveMenu(!activeMenu)}>
 						<span></span>
 					</div>
 					<nav className="burger-menu__burgerList" onClick={() => setActiveMenu(false)}>
 						{myList.map((obj, index) => (
 							<a
-								className={activePage === obj.page ? obj.active : obj.class}
 								href={`#${obj.page}`}
 								onClick={() => {
 									setActivePage(obj.page);
 									setActiveMenu(false);
 								}}
 								key={index}>
+								<i className={activePage === obj.page ? obj.active : obj.class}></i>
 								<span>{obj.page}</span>
 							</a>
 						))}

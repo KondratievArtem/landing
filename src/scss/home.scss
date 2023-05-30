@@ -80,6 +80,7 @@
 		height: 100%;
 		background-color: #000;
 		border-left: 2px solid yellow;
+		-webkit-animation: animMI 5s steps(14) infinite, animMitwo 5s steps(14) infinite;
 		animation: animMI 5s steps(14) infinite, animMitwo 5s steps(14) infinite;
 		margin-left: -5px;
 	}
@@ -89,7 +90,7 @@
 			text-transform: none;
 		}
 	}
-	&__dowlode {
+	&__downloaded {
 		display: inline-block;
 		border: 1px solid #fff;
 		padding: 1rem 2rem;
@@ -105,9 +106,6 @@
 
 	&__content > *:not(:last-child) {
 		margin-bottom: 2rem;
-	}
-
-	&__social {
 	}
 }
 
@@ -128,6 +126,21 @@
 	}
 }
 
+@-webkit-keyframes animMI {
+	3% {
+		left: 0%;
+	}
+	30% {
+		left: 100%;
+	}
+	80% {
+		left: 100%;
+	}
+	100% {
+		left: 0%;
+	}
+}
+
 @keyframes animMI {
 	3% {
 		left: 0%;
@@ -140,6 +153,29 @@
 	}
 	100% {
 		left: 0%;
+	}
+}
+@-webkit-keyframes animMitwo {
+	30% {
+		border-left: 2px solid yellow;
+	}
+	38% {
+		border-left: 2px solid #000;
+	}
+	46% {
+		border-left: 2px solid yellow;
+	}
+	54% {
+		border-left: 2px solid #000;
+	}
+	62% {
+		border-left: 2px solid yellow;
+	}
+	70% {
+		border-left: 2px solid #000;
+	}
+	80% {
+		border-left: 2px solid yellow;
 	}
 }
 @keyframes animMitwo {

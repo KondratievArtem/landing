@@ -29,46 +29,46 @@ const About = () => {
 							<p>* Високий рівень мотивації та активна громадянська позиція. Мотивація бути причетним до масштабних проєктів.</p>
 						</div>
 						<div className="about-me__columns">
-							<div className="about-me__column">
-								<div>
+							<dl className="about-me__column">
+								<dt>
 									День народження: <span>09 серпня 1991р.</span>
-								</div>
-								<div>
+								</dt>
+								<dt>
 									Місто : <span>Кривий Ріг</span>
-								</div>
-								<div>
+								</dt>
+								<dt>
 									Freelance:
 									<span>
 										<a href="https://freelancehunt.com/freelancer/KondratievArtem.html "> Freelancehunt</a>
 									</span>
-								</div>
-							</div>
-							<div className="about-me__column">
-								<div>
+								</dt>
+							</dl>
+							<dl className="about-me__column">
+								<dt>
 									Вік: <span>31</span>
-								</div>
-								<div>
+								</dt>
+								<dt>
 									E-mail:
-									<span>
+									<address>
 										<a href="mailto:kondrativ41@gmail.com"> kondrativ41@gmail.com</a>
-									</span>
-								</div>
-								<div>
+									</address>
+								</dt>
+								<dt>
 									Телефон:
-									<span>
+									<address>
 										<a href="tel:+380978363634"> +38 097 836 36 34</a>
-									</span>
-								</div>
-							</div>
-							<div className="about-me__column">
+									</address>
+								</dt>
+							</dl>
+							<dl className="about-me__column">
 								<img src={certificate} alt="certificate" onClick={() => setIsPopup(true)} />
 								{isPopup && (
-									<div className="about-me__column_popup">
+									<dt className="about-me__column_popup">
 										<i className="about-me__column_popup-close" onClick={() => setIsPopup(false)}></i>
 										<img src={certificate} alt="certificate" />
-									</div>
+									</dt>
 								)}
-							</div>
+							</dl>
 						</div>
 						{/* <div>
 								<a className="title-page__downloaded" href="./cv" download="mycv.txt">

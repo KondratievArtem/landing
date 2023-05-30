@@ -33,15 +33,17 @@
 	}
 	&__column {
 		flex: 0 1 33.333%;
-		div {
+		dt {
 			padding: 1rem 2rem 1rem 0;
 			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 			font-weight: 600;
 			font-size: 2rem;
+			address,
 			span {
 				font-weight: normal;
 				font-size: 1.8rem;
 				color: darkgray;
+				display: inline;
 				a {
 					color: inherit;
 					margin-right: 1rem;

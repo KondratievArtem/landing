@@ -1,6 +1,8 @@
 import { education, experience } from '../assets/json/information';
-//
+//styli
 import '../scss/education.scss';
+// component
+import Description from './description';
 
 const Education = () => {
 	return (
@@ -12,32 +14,8 @@ const Education = () => {
 					</h1>
 				</div>
 				<div className="education__columns">
-					<div className="education__column">
-						<h3>Вивчав</h3>
-						<div className="education__column-body">
-							{education.map((obj, i) => (
-								<div className="education__column-icon column-icon" key={i}>
-									<div className="column-icon__img">
-										<img src={obj.icon} alt="img" />
-									</div>
-									<div className="column-icon__title">{obj.title}</div>
-									<div className="column-icon__body">{obj.text}</div>
-								</div>
-							))}
-						</div>
-					</div>
-					<div className="education__column">
-						<h3>Досвід та практика</h3>
-						<div className="education__column-body">
-							{experience.map((obj, i) => (
-								<div className="education__column-icon column-icon" key={i}>
-									<div className="column-icon__img"></div>
-									<div className="column-icon__title">{obj.title}</div>
-									<div className="column-icon__body">{obj.text}</div>
-								</div>
-							))}
-						</div>
-					</div>
+					<Description title={'Вивчав'} data={education} />
+					<Description title={'Досвід та практика'} data={experience} />
 				</div>
 			</div>
 		</section>

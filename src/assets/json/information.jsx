@@ -23,7 +23,7 @@ export const education = [
 	{
 		icon: css,
 		title: 'CSS/SCSS',
-		text: 'Крок до чарівного. Так можна назвати технологію css. Та його препроцесор sass та lass. Препроцесори значно спростовує роботу з цією технологією. Сам я використовую scss/sass що є майже тим самим, за винятком деяких деталей. Також знайомий з: animacion keyfrom, transform, posicion, media запитами. Та ще багато чого цікавого.',
+		text: 'Крок до чарівного. Так можна назвати технологію css. Та його препроцесор sass та less. Препроцесори значно спрощує роботу з цією технологією. Сам я використовую scss/sass що є майже тим самим, за винятком деяких деталей. Також знайомий з: animation, transforms, transitions, position, @media запитами. Та ще багато чого цікавого.',
 	},
 	{
 		icon: js,
@@ -107,8 +107,10 @@ export const contacts = [
 ];
 
 export const myList = [
-	{ page: 'Про мене', class: 'icon-about_icon', active: 'header__active icon-about_icon' },
-	{ page: 'Освіта', class: 'icon-home_icon', active: 'header__active icon-home_icon' },
-	{ page: 'Портфоліо', class: 'icon-portfolio_icon', active: 'header__active icon-portfolio_icon' },
-	{ page: 'Контакти', class: 'icon-address_icon', active: 'header__active icon-address_icon' },
+	{ page: 'Про мене', class: 'icon-about_icon', active: 'active icon-about_icon' },
+	{ page: 'Освіта', class: 'icon-home_icon', active: 'active icon-home_icon' },
+	{ page: 'Портфоліо', class: 'icon-portfolio_icon', active: 'active icon-portfolio_icon' },
+	{ page: 'Контакти', class: 'icon-address_icon', active: 'active icon-address_icon' },
 ];
+
+export const startTimeData = new Date(2022, 1, 24).getTime();
