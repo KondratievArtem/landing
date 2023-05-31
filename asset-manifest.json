@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing/static/css/main.8b9fef8d.css",
-    "main.js": "/landing/static/js/main.9e6fca3d.js",
+    "main.css": "/landing/static/css/main.ef77d18f.css",
+    "main.js": "/landing/static/js/main.a0a389cc.js",
     "static/media/relvise.png": "/landing/static/media/relvise.f102f1bd890ded41cbb1.png",
     "static/media/Главная2.png": "/landing/static/media/Главная2.ebd2a175cfcbbf6e7f4c.png",
     "static/media/certificate.png": "/landing/static/media/certificate.16a65aa0ce71e5a68d52.png",
@@ -33,11 +33,11 @@
     "static/media/figma.svg": "/landing/static/media/figma.72ff35026c53ba574aef54c980db0e8d.svg",
     "index.html": "/landing/index.html",
     "static/media/npm.svg": "/landing/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
-    "main.8b9fef8d.css.map": "/landing/static/css/main.8b9fef8d.css.map",
-    "main.9e6fca3d.js.map": "/landing/static/js/main.9e6fca3d.js.map"
+    "main.ef77d18f.css.map": "/landing/static/css/main.ef77d18f.css.map",
+    "main.a0a389cc.js.map": "/landing/static/js/main.a0a389cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b9fef8d.css",
-    "static/js/main.9e6fca3d.js"
+    "static/css/main.ef77d18f.css",
+    "static/js/main.a0a389cc.js"
   ]
 }
