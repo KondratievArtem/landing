@@ -17,6 +17,7 @@
 	box-shadow: 1px 1px 5px $lineBottomColor-10, -1px -1px 5px $lineBottomColor-10;
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 	&__img {
 		display: flex;
 		width: 100%;
