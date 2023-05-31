@@ -11,14 +11,14 @@ const Contacts = () => {
 					</h2>
 				</div>
 				<div className="contacts__body">
-					<div className="contacts__qestions">
+					<div className="contacts__questions">
 						<p>Маєш до мене питання?</p>
 						<span>Я до ваших послуг</span>
 					</div>
 					<div className="contacts__columns">
 						{contacts.map((obj, i) => (
 							<div className="contacts__column " key={i}>
-								<div className="contacts__column-linck">
+								<div className="contacts__column-link">
 									<a href={obj.link}>
 										<div className="contacts__column-icon">
 											<img src={obj.icon} alt="contact" />

@@ -1,3 +1,4 @@
+@import './config.scss';
 .home {
 	&__root {
 		position: relative;
@@ -44,42 +45,42 @@
 			font-size: 4rem;
 
 			span {
-				color: yellow;
+				color: $accentColor;
 			}
 		}
 		p {
-			color: rgb(122, 116, 116);
+			color: $textSecondColor;
 		}
 	}
-	&__im {
+	&__img {
 		display: inline-flex;
 		text-transform: capitalize;
-		background-color: #000;
+		background-color: $backgroundColor;
 		padding: 1rem;
 		border-radius: 5px;
 	}
-	&__im-about {
+	&__img-about {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin-right: 1rem;
 	}
-	&__im-text {
+	&__img-text {
 		position: relative;
-		color: yellow;
+		color: $accentColor;
 
 		padding: 0 10px 0px 5px;
 		overflow: hidden;
 	}
-	&__im-text::before {
+	&__img-text::before {
 		content: '';
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: #000;
-		border-left: 2px solid yellow;
+		background-color: $backgroundColor;
+		border-left: 2px solid $accentColor;
 		-webkit-animation: animMI 5s steps(14) infinite, animMitwo 5s steps(14) infinite;
 		animation: animMI 5s steps(14) infinite, animMitwo 5s steps(14) infinite;
 		margin-left: -5px;
@@ -92,15 +93,15 @@
 	}
 	&__downloaded {
 		display: inline-block;
-		border: 1px solid #fff;
+		border: 1px solid $textColor;
 		padding: 1rem 2rem;
 		border-radius: 2.5rem;
-		color: #fff;
+		color: $textColor;
 		margin-top: 1rem;
 
 		&:hover {
-			color: yellow;
-			border: 1px solid yellow;
+			color: $hoverColor;
+			border: 1px solid $hoverColor;
 		}
 	}
 
@@ -116,12 +117,12 @@
 	max-width: 10rem;
 	margin-top: 5rem;
 	svg {
-		fill: aliceblue;
+		fill: $textColor;
 		width: 3rem;
 	}
 	a {
 		svg:hover {
-			fill: yellow;
+			fill: $hoverColor;
 		}
 	}
 }
@@ -157,48 +158,48 @@
 }
 @-webkit-keyframes animMitwo {
 	30% {
-		border-left: 2px solid yellow;
+		border-left: 2px solid $accentColor;
 	}
 	38% {
-		border-left: 2px solid #000;
+		border-left: 2px solid $backgroundColor;
 	}
 	46% {
-		border-left: 2px solid yellow;
+		border-left: 2px solid $accentColor;
 	}
 	54% {
-		border-left: 2px solid #000;
+		border-left: 2px solid $backgroundColor;
 	}
 	62% {
-		border-left: 2px solid yellow;
+		border-left: 2px solid $accentColor;
 	}
 	70% {
-		border-left: 2px solid #000;
+		border-left: 2px solid $backgroundColor;
 	}
 	80% {
-		border-left: 2px solid yellow;
+		border-left: 2px solid $accentColor;
 	}
 }
 @keyframes animMitwo {
 	30% {
-		border-left: 2px solid yellow;
+		border-left: 2px solid $accentColor;
 	}
 	38% {
-		border-left: 2px solid #000;
+		border-left: 2px solid $backgroundColor;
 	}
 	46% {
-		border-left: 2px solid yellow;
+		border-left: 2px solid $accentColor;
 	}
 	54% {
-		border-left: 2px solid #000;
+		border-left: 2px solid $backgroundColor;
 	}
 	62% {
-		border-left: 2px solid yellow;
+		border-left: 2px solid $accentColor;
 	}
 	70% {
-		border-left: 2px solid #000;
+		border-left: 2px solid $backgroundColor;
 	}
 	80% {
-		border-left: 2px solid yellow;
+		border-left: 2px solid $accentColor;
 	}
 }
 // media pull-------------------

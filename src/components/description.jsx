@@ -1,21 +1,49 @@
-const Description = ({ title, data }) => {
+import React from 'react';
+
+const Description = ({ data, isPopup, setIsPopup }) => {
+	const add = () => {
+		setIsPopup(true);
+		document.querySelector('body').classList.add('none');
+	};
+	const remove = () => {
+		setIsPopup(false);
+		document.querySelector('body').classList.remove('none');
+	};
+
 	return (
-		<div className="education__column">
-			<h3>{title}</h3>
-			<div className="education__column-body">
-				{data.map((obj, i) => (
-					<div className="education__column-icon column-icon" key={i}>
-						{obj.icon && (
-							<div className="column-icon__img">
-								<img src={obj.icon} alt="img" />
+		<>
+			{data.map((obj, i) =>
+				obj.text ? (
+					<dl key={i}>
+						<dt>{obj.name}</dt>
+						<dd>{obj.text}</dd>
+					</dl>
+				) : obj.link ? (
+					<dl key={i}>
+						<dt>{obj.type}</dt>
+						<dd>
+							<a href={obj.link} id={obj.id && obj.id}>
+								{obj.name}
+							</a>
+						</dd>
+					</dl>
+				) : (
+					<div className="img" key={i}>
+						<img src={obj.img} alt={obj.name} onClick={() => add()} />
+						{isPopup && (
+							<div className="about-me__popup">
+								<i
+									className="about-me__popup-close"
+									onClick={() => {
+										remove();
+									}}></i>
+								<img src={obj.img} alt={obj.name} />
 							</div>
 						)}
-						<div className="column-icon__title">{obj.title}</div>
-						<div className="column-icon__body">{obj.text}</div>
 					</div>
-				))}
-			</div>
-		</div>
+				)
+			)}
+		</>
 	);
 };
 

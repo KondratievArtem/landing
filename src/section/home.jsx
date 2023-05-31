@@ -26,12 +26,12 @@ const Home = () => {
 						<h1>
 							артем <span>кондратьєв</span>
 						</h1>
-						<div className="title-page__im">
-							<p className="title-page__im-about">Я займаюсь: </p>
-							<div className="title-page__im-text">{about[indexArr]}</div>
+						<div className="title-page__img">
+							<p className="title-page__img-about">Я займаюсь: </p>
+							<div className="title-page__img-text">{about[indexArr]}</div>
 						</div>
 						<div className="title-page__content-text">
-							<p>Якщо Вам потрібно зробити сайт, верстку . Я це зроблю!!! Якщо Вам потрібний цінний працівник, то це я.</p>
+							<p>Достатньо опанувати знання й більше ні хто не зможе у вас це відібрати. Це і є справжня цінність.</p>
 						</div>
 						{/* <a className="title-page__dowlode" href="./cv" download="my-cv.txt">
 							завантажити cv

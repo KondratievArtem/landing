@@ -1,24 +1,20 @@
+@import './config.scss';
 .education {
 	font-size: 1.8rem;
-	&__columns {
-	}
-
 	&__column {
 		padding-bottom: 3rem;
-
 		h3 {
 			font-size: 2rem;
 			margin-bottom: 2rem;
 		}
 	}
 	&__column-body {
-		background-color: rgba(26, 25, 25, 0.5);
+		background-color: $blogBackgroundColor-50;
 		padding: 2rem 2rem 2rem 4rem;
 		border-radius: 10px;
-		box-shadow: 1px 1px 5px rgba(250, 250, 250, 0.2);
+		box-shadow: 1px 1px 5px $lineBottomColor-10;
 	}
 }
-
 .column-icon {
 	margin-bottom: 3rem;
 	position: relative;
@@ -31,7 +27,6 @@
 	position: absolute;
 	top: -4px;
 	left: -34px;
-
 	img {
 		display: inline-block;
 		position: absolute;
@@ -48,7 +43,6 @@
 	font-size: 1.8rem;
 	font-weight: 600;
 }
-
 // media pull-------------------
 // 950 px---------------
 @media (max-width: 59.375em) {
@@ -56,12 +50,8 @@
 		&__columns {
 			flex-wrap: wrap;
 		}
-
 		&__column {
 			flex: 0 1 100%;
-
-			h3 {
-			}
 		}
 	}
 }

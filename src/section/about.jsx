@@ -1,7 +1,9 @@
-import certificate from '../assets/img/certificate.png';
-//
 import React from 'react';
+// styli
 import '../scss/about.scss';
+// component
+import Description from '../components/description';
+import { myData } from '../assets/json/information';
 
 const About = () => {
 	const [isPopup, setIsPopup] = React.useState(false);
@@ -18,7 +20,7 @@ const About = () => {
 						<div>
 							<h1>Привіт, я Артем Кондратьєв.</h1>
 
-							<span>Мої цінності:</span>
+							<em>Мої цінності:</em>
 
 							<p>
 								* Відповідальність, висока працездатність, ефективність, продуктивність та результативність, проактивність та ініціативність, для мене
@@ -29,7 +31,7 @@ const About = () => {
 							<p>* Високий рівень мотивації та активна громадянська позиція. Мотивація бути причетним до масштабних проєктів.</p>
 						</div>
 						<div className="about-me__columns">
-							<div className="about-me__column">
+							{/* <div className="about-me__column">
 								<dl>
 									<dt>День народження:</dt> <dd>09 серпня 1991р.</dd>
 								</dl>
@@ -42,8 +44,8 @@ const About = () => {
 										<a href="https://freelancehunt.com/freelancer/KondratievArtem.html "> Freelancehunt</a>
 									</dd>
 								</dl>
-							</div>
-							<div className="about-me__column">
+							</div> */}
+							{/* <div className="about-me__column">
 								<dl>
 									<dt>Вік:</dt> <dd>31</dd>
 								</dl>
@@ -63,16 +65,17 @@ const About = () => {
 										</address>
 									</dd>
 								</dl>
-							</div>
-							<div className="about-me__column">
-								<img src={certificate} alt="certificate" onClick={() => setIsPopup(true)} />
+							</div> */}
+							{/* <div className="about-me__column">
+								<img src={} alt="certificate" onClick={() => setIsPopup(true)} />
 								{isPopup && (
 									<div className="about-me__column_popup">
 										<i className="about-me__column_popup-close" onClick={() => setIsPopup(false)}></i>
-										<img src={certificate} alt="certificate" />
+										<img src={} alt="certificate" />
 									</div>
 								)}
-							</div>
+							</div> */}
+							<Description data={myData} isPopup={isPopup} setIsPopup={setIsPopup} />
 						</div>
 						{/* <div>
 								<a className="title-page__downloaded" href="./cv" download="mycv.txt">

@@ -13,6 +13,7 @@ import phone from '../img/icons/contacts/phone.svg';
 import telegram from '../img/icons/contacts/telegram.svg';
 import email from '../img/icons/contacts/email.svg';
 import skype from '../img/icons/contacts/skype.svg';
+import certificate from '../img/certificate.png';
 
 export const education = [
 	{
@@ -23,12 +24,12 @@ export const education = [
 	{
 		icon: css,
 		title: 'CSS/SCSS',
-		text: 'Крок до чарівного. Так можна назвати технологію css. Та його препроцесор sass та less. Препроцесори значно спрощує роботу з цією технологією. Сам я використовую scss/sass що є майже тим самим, за винятком деяких деталей. Також знайомий з: animation, transforms, transitions, position, @media запитами. Та ще багато чого цікавого.',
+		text: 'Крок до чарівного. Так можна назвати технологію css. Та його препроцесор sass та less. Препроцесори значно спрощують роботу з цією технологією. Сам я використовую scss/sass що є майже тим самим, за винятком деяких деталей. Також знайомий з: animation, transforms, transitions, position, @media запитами. Та ще багато чого цікавого.',
 	},
 	{
 		icon: js,
 		title: 'JS',
-		text: "Js неможливо описати декількома словами, це насправді нервова система додатків. Працює з DOM елементами та є справжньою мовою програмування. Мало знати базові речі цієї технології, потрібні справжні навички та розуміння алгоритмів. Взагалі вивчав самостійно всі технології, але для саморозуміння пройшов курс Лущенка Олександра js 2.0 де отримав сертифікат та підтвердження того що володію базовими навичками. Перевірить сертифікат можливо за посиланням https://itgid.info/ru/certificate та номер сертифіката: 99ucj1uwrhd4. В цьому курсі є декілька міні проєктів пов'язані з ajax запитами, події мишки та клавіатури. Я їх додам до свого портфоліо",
+		text: "Js неможливо описати декількома словами, це насправді нервова система додатків. Працює з DOM елементами та є справжньою мовою програмування. Мало знати базові речі цієї технології, потрібні справжні навички та розуміння алгоритмів. Взагалі вивчав самостійно всі технології, але для саморозуміння пройшов курс Лущенка Олександра js 2.0 де отримав сертифікат та підтвердження того що володію базовими навичками. Перевірити сертифікат можливо за посиланням https://itgid.info/ru/certificate та номер сертифіката: 99ucj1uwrhd4. В цьому курсі є декілька міні проєктів пов'язані з ajax запитами, подіями мишки та клавіатури. Я їх додам до свого портфоліо",
 	},
 	{
 		icon: react,
@@ -111,6 +112,41 @@ export const myList = [
 	{ page: 'Освіта', class: 'icon-home_icon', active: 'active icon-home_icon' },
 	{ page: 'Портфоліо', class: 'icon-portfolio_icon', active: 'active icon-portfolio_icon' },
 	{ page: 'Контакти', class: 'icon-address_icon', active: 'active icon-address_icon' },
+];
+export const myData = [
+	{
+		name: 'День народження:',
+		text: '09 серпня 1991р.',
+	},
+	{
+		name: 'Місто:',
+		text: 'Кривий Ріг',
+	},
+	{
+		type: 'Freelance',
+		name: 'Freelancehunt',
+		link: 'https://freelancehunt.com/freelancer/KondratievArtem.html',
+	},
+	{
+		name: 'Вік:',
+		text: '31',
+	},
+	{
+		type: 'E-mail:',
+		name: 'kondrativ41@gmail.com',
+		link: 'mailto:kondrativ41@gmail.com',
+	},
+	{
+		id: 'phone',
+		type: 'Телефон',
+		name: '+380978363634',
+		link: 'tel:+380978363634',
+	},
+	{
+		type: 'img',
+		name: 'certificate',
+		img: certificate,
+	},
 ];
 
 export const startTimeData = new Date(2022, 1, 24).getTime() / (1000 * 60);
