@@ -1,5 +1,5 @@
 import { education, experience } from '../assets/json/information';
-//styli
+//style
 import '../scss/education.scss';
 // component
 import ComponentEducation from '../components/education';

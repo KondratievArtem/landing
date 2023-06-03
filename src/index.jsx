@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './scss/styli.scss';
+import './scss/styles.scss';
 // ======
 import App from './app';
 

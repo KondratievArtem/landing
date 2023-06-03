@@ -1,5 +1,5 @@
 import React from 'react';
-// styli
+// style
 import '../scss/about.scss';
 // component
 import Description from '../components/description';

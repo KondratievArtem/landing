@@ -22,7 +22,7 @@ const Description = ({ data, isPopup, setIsPopup }) => {
 					<dl key={i}>
 						<dt>{obj.type}</dt>
 						<dd>
-							<a href={obj.link} id={obj.id && obj.id}>
+							<a href={obj.link} target={!obj.id && '_blank'} rel="noopener noreferrer" id={obj.id && obj.id}>
 								{obj.name}
 							</a>
 						</dd>

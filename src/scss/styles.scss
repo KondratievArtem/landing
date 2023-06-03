@@ -1,4 +1,4 @@
-@import 'resetStyli.scss';
+@import 'resetStyles.scss';
 @import 'config.scss';
 @import 'fonts-icon.css';
 
@@ -16,6 +16,10 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+}
+
+*,
+body {
 }
 
 body {
@@ -48,6 +52,7 @@ body {
 
 .header {
 	padding: 1rem 0;
+	transition: all 0.5s ease;
 }
 
 .main {
